@@ -10,7 +10,6 @@ import Employee from './components/Employee';
     <Navbar />
     <AddEmployee />
     <CurrentEmployees />
-   {/* <Employee /> */}
    </div>
   );
 }

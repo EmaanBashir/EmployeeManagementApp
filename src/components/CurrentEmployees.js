@@ -30,7 +30,7 @@ const CurrentEmployees = () => {
                 <h4 className = "text-white fw-semibold tracking-wide inc-letter-spacing font-32">Current Employees</h4>
                 <div className = "my-4">
                 {employees.map((emp) =>
-                    <Employee employee={emp} key={emp.id} />
+                    <Employee employee={emp} getEmpFunc = {getEmployees} key={emp.id} />
                 )}
                 </div>
             </div>

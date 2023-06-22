@@ -10,7 +10,7 @@ const Employee = (props) => {
        if (shouldDelete){
         const documentRef = doc(db, "employee", id);
         await deleteDoc(documentRef)
-        window.location.reload();
+        props.getEmpFunc();
        }
        } catch (err) {
        console.log(err);
